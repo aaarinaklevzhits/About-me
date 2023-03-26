@@ -1,0 +1,30 @@
+.preview-item {
+    width: calc((100% - 20px) / 2);
+    max-width: 350px;
+    &:not(:last-of-type) {
+        margin: 0 70px 0 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .preview-item {
+        &:not(:last-of-type) {
+            margin: 0 40px 0 0;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .preview-item {
+        width: 450px;
+        &:not(:last-of-type) {
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .preview-item {
+        width: 300px;
+    }
+}

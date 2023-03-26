@@ -1,0 +1,31 @@
+.navigation {
+    font-size: .9rem;
+    font-weight: 500;
+    padding: 15px 0;
+    &__item {
+        &:not(:last-child)::after {
+            content: "";
+            width: 10px;
+            height: 2px;
+            display: inline-block;
+            background-color: $alternative-color;
+            margin: 0 25px;
+            vertical-align: middle;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        &__item {
+            display: block;
+            &:not(:last-child)::after {
+                content: "";
+                display: block;
+                margin: 10px auto;
+            }
+        }
+    }
+}

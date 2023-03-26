@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: $main-font;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+}
+
+a {
+    color: $alternative-color;
+    text-decoration: none;
+}

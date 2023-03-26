@@ -1,0 +1,57 @@
+.hobby-item {
+    width: calc((100% - 3*20px) / 4);
+    max-width: 350px;
+    text-align: center;
+    margin: 50px 0;
+    &:not(:last-of-type) {
+        margin-right: 20px;
+    }
+    &__photo {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    &__name {
+        margin: 30px 0;
+    }
+    &__description {
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .hobby-item {
+        width: 450px;
+        margin: 30px 0;
+        &:not(:last-of-type) {
+            margin-right: 0;
+        }
+        &__name {
+            margin: 20px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hobby-item {
+        width: 300px;
+        margin: 20px 0;
+        &__photo {
+            width: 150px;
+            height: 150px;
+        }
+        &__name {
+            margin: 10px 0;
+            font-size: $main-font;
+        }
+        &__description {
+            font-size: .9rem;
+        }
+    }
+}

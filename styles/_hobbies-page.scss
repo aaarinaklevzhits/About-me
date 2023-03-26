@@ -1,0 +1,33 @@
+.hobbies-page {
+    padding: 80px 40px;
+    &__title {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .hobbies-page {
+        padding: 60px 20px;
+        &__title {
+            font-size: 1.5rem;
+            max-width: 450px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .hobbies-page {
+        padding: 40px 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hobbies-page {
+        padding: 30px 10px;
+        &__title {
+            font-size: 1.1rem;
+            max-width: 200px;
+        }
+    }
+}

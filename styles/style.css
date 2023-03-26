@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+}
+
+a {
+  color: #474747;
+  text-decoration: none;
+}
+
+.navigation {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 15px 0;
+}
+.navigation__item:not(:last-child)::after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  display: inline-block;
+  background-color: #474747;
+  margin: 0 25px;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 600px) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+  }
+  .navigation__item {
+    display: block;
+  }
+  .navigation__item:not(:last-child)::after {
+    content: "";
+    display: block;
+    margin: 10px auto;
+  }
+}
+.preview-page {
+  padding: 80px 40px;
+  display: flex;
+  justify-content: center;
+}
+.preview-page__text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.preview-page__header {
+  font-size: 2.5rem;
+  text-align: left;
+}
+.preview-page__description {
+  text-align: justify;
+  font-size: 1.2rem;
+  margin: 20px 0 0 0;
+}
+.preview-page__photo {
+  width: 350px;
+}
+.preview-page__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 1000px) {
+  .preview-page {
+    padding: 60px 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .preview-page {
+    padding: 40px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .preview-page__header {
+    font-size: 1.5rem;
+  }
+  .preview-page__description {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .preview-page {
+    padding: 30px 10px;
+  }
+  .preview-page__header {
+    font-size: 1.1rem;
+    max-width: 150px;
+  }
+  .preview-page__description {
+    font-size: 0.9rem;
+    margin: 15px 0;
+  }
+}
+.preview-item {
+  width: calc((100% - 20px) / 2);
+  max-width: 350px;
+}
+.preview-item:not(:last-of-type) {
+  margin: 0 70px 0 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .preview-item:not(:last-of-type) {
+    margin: 0 40px 0 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .preview-item {
+    width: 450px;
+  }
+  .preview-item:not(:last-of-type) {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .preview-item {
+    width: 300px;
+  }
+}
+.hobbies-page {
+  padding: 80px 40px;
+}
+.hobbies-page__title {
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .hobbies-page {
+    padding: 60px 20px;
+  }
+  .hobbies-page__title {
+    font-size: 1.5rem;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  .hobbies-page {
+    padding: 40px 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hobbies-page {
+    padding: 30px 10px;
+  }
+  .hobbies-page__title {
+    font-size: 1.1rem;
+    max-width: 200px;
+  }
+}
+.hobbies-list {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .hobbies-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.hobby-item {
+  width: calc((100% - 60px) / 4);
+  max-width: 350px;
+  text-align: center;
+  margin: 50px 0;
+}
+.hobby-item:not(:last-of-type) {
+  margin-right: 20px;
+}
+.hobby-item__photo {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+.hobby-item__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.hobby-item__name {
+  margin: 30px 0;
+}
+.hobby-item__description {
+  text-align: justify;
+}
+
+@media screen and (max-width: 1000px) {
+  .hobby-item {
+    width: 450px;
+    margin: 30px 0;
+  }
+  .hobby-item:not(:last-of-type) {
+    margin-right: 0;
+  }
+  .hobby-item__name {
+    margin: 20px 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hobby-item {
+    width: 300px;
+    margin: 20px 0;
+  }
+  .hobby-item__photo {
+    width: 150px;
+    height: 150px;
+  }
+  .hobby-item__name {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  .hobby-item__description {
+    font-size: 0.9rem;
+  }
+}
+.social-page {
+  padding: 50px 0;
+}
+.social-page__title {
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .social-page {
+    padding: 40px 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .social-page {
+    padding: 30px 0;
+  }
+  .social-page__title {
+    font-size: 0.8rem;
+  }
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+.social-links__item {
+  font-size: 1.7rem;
+  font-weight: 500;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  color: #262626;
+  background-color: white;
+  text-align: center;
+  transition: 0.5s;
+}
+.social-links__item:not(:last-of-type) {
+  margin-right: 10px;
+}
+.social-links__item:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 400px) {
+  .social-links__item {
+    font-size: 1rem;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+  .social-links__item:not(:last-of-type) {
+    margin-right: 5px;
+  }
+}/*# sourceMappingURL=style.css.map */

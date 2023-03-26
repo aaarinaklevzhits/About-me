@@ -1,0 +1,11 @@
+.hobbies-list {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .hobbies-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
